@@ -1,4 +1,4 @@
-# Different colors in wxPython wxTextCtrl 
+# Sample sending email using gmail service
 
 ### Usage
 
@@ -15,6 +15,14 @@
     EMAIL_FROM        = "USER.NAME@gmail.com"
     EMAIL_LOGIN       = "USER.NAME"
     EMAIL_PASSWORD    = "WW91ciBwYXNzd29yZA=="
+
+**PASSWORD in 64 base** so you need prepare you password in base64:
+
+    #!/usr/bin/python
+    import base64
+    base64_password = base64.b64encode("Your password")
+    print base64_password 
+    #Ouput: WW91ciBwYXNzd29yZA==
 
 ### Run script:
 
